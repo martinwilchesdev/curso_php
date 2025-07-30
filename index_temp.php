@@ -18,10 +18,25 @@ const NOMBRE = 'Martin';
 $output = match(true) {
     $age < 19 => 'Teeneger',
     default => 'Elder'
-}
+};
+
+// arreglos
+$languages = ['JavaScript', 'PHP'];
+$languages[] = 'Ruby'; // añadir elementos al array
+
+// arreglos asociativos
+$datos = [
+    'nombre' => 'Martin',
+    'apellido' => 'Wilches',
+    'edad' => 31
+];
 ?>
 
-<img src="<?= LOGO_URL ?>" alt="PHP LOGO" width="200" >
-<h1>
-    <?= "Hola Mundo" ?>
-</h1>
+<img src="<?= LOGO_URL ?>" alt="PHP LOGO" width="200">
+
+<ul>
+    <!-- plantilla utilizada para la iteracion mediante el bucle foreach -->
+<?php foreach($languages as $lang) : ?>
+    <li><?= $lang ?></li>
+<?php endforeach ?>
+</ul>
