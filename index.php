@@ -45,4 +45,13 @@ curl_close($ch);
         display: grid;
         place-content: center;
     }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    hgroup {
+        text-align: center;
+    }
 </style>
